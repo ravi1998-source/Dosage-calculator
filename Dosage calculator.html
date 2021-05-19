@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+	<script>
+	    function mul(){
+			var w,c;
+			w=Number(document.getElementById("weight").value);
+			c= w * 0.05;
+			result = c.toFixed(2);
+			document.getElementById("result").value= result;
+		}
+	</script>
+	<link rel="stylesheet" href="add.css">
+	</head>
+
+<body>
+	<div class="container">
+		<h1>Dosage calculator</h1>
+
+		<p>Weight in kgs</p>
+
+		<input type="number"  id="weight">
+
+		<button id="btn" onclick="mul()">Calculate</button>
+
+		<input id="result" />
+
+	</div>
+</body>
+</html>
+
